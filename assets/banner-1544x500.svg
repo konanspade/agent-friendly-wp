@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1544 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1544" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1544" height="500" fill="url(#bg)"/>
+  <rect width="1544" height="500" fill="url(#shine)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="white" stroke-width="1">
+    <line x1="0" y1="100" x2="1544" y2="100"/>
+    <line x1="0" y1="200" x2="1544" y2="200"/>
+    <line x1="0" y1="300" x2="1544" y2="300"/>
+    <line x1="0" y1="400" x2="1544" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="1200" y1="0" x2="1200" y2="500"/>
+  </g>
+
+  <!-- Logo icon (left side) -->
+  <g transform="translate(180, 130)">
+    <!-- Robot head -->
+    <rect x="0" y="40" width="120" height="100" rx="24" fill="white" opacity="0.95"/>
+    <!-- Eyes -->
+    <circle cx="36" cy="80" r="14" fill="#6366f1"/>
+    <circle cx="84" cy="80" r="14" fill="#6366f1"/>
+    <circle cx="40" cy="76" r="5" fill="white"/>
+    <circle cx="88" cy="76" r="5" fill="white"/>
+    <!-- Mouth -->
+    <rect x="28" y="108" width="64" height="8" rx="4" fill="#6366f1" opacity="0.5"/>
+    <!-- Antenna -->
+    <line x1="60" y1="40" x2="60" y2="12" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="60" cy="8" r="10" fill="white"/>
+    <circle cx="60" cy="8" r="6" fill="#a78bfa"/>
+    <!-- Ears -->
+    <rect x="-20" y="64" width="20" height="32" rx="8" fill="white" opacity="0.7"/>
+    <rect x="120" y="64" width="20" height="32" rx="8" fill="white" opacity="0.7"/>
+    <!-- Document lines -->
+    <rect x="12" y="160" width="96" height="5" rx="2.5" fill="white" opacity="0.4"/>
+    <rect x="12" y="174" width="72" height="5" rx="2.5" fill="white" opacity="0.3"/>
+    <rect x="12" y="188" width="84" height="5" rx="2.5" fill="white" opacity="0.2"/>
+  </g>
+
+  <!-- Plugin name -->
+  <text x="420" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="72" font-weight="700" fill="white" letter-spacing="-1">
+    Agent Friendly
+  </text>
+
+  <!-- Tagline -->
+  <text x="420" y="280" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" font-weight="400" fill="white" opacity="0.75">
+    Make your WordPress site readable by AI agents
+  </text>
+
+  <!-- Feature badges -->
+  <g transform="translate(420, 320)">
+    <!-- LLMs.txt badge -->
+    <rect x="0" y="0" width="150" height="40" rx="20" fill="white" opacity="0.15"/>
+    <text x="75" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">LLMs.txt</text>
+
+    <!-- Markdown Mirror badge -->
+    <rect x="170" y="0" width="210" height="40" rx="20" fill="white" opacity="0.15"/>
+    <text x="275" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">Markdown Mirror</text>
+
+    <!-- WebMCP badge -->
+    <rect x="400" y="0" width="140" height="40" rx="20" fill="white" opacity="0.15"/>
+    <text x="470" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" text-anchor="middle">WebMCP</text>
+  </g>
+
+  <!-- Floating connection dots (right side decoration) -->
+  <g opacity="0.15">
+    <circle cx="1200" cy="120" r="6" fill="white"/>
+    <circle cx="1300" cy="180" r="4" fill="white"/>
+    <circle cx="1250" cy="300" r="5" fill="white"/>
+    <circle cx="1380" cy="250" r="3" fill="white"/>
+    <circle cx="1150" cy="380" r="4" fill="white"/>
+    <circle cx="1350" cy="350" r="6" fill="white"/>
+    <circle cx="1420" cy="150" r="3" fill="white"/>
+    <circle cx="1450" cy="400" r="5" fill="white"/>
+    <line x1="1200" y1="120" x2="1300" y2="180" stroke="white" stroke-width="1"/>
+    <line x1="1300" y1="180" x2="1380" y2="250" stroke="white" stroke-width="1"/>
+    <line x1="1250" y1="300" x2="1380" y2="250" stroke="white" stroke-width="1"/>
+    <line x1="1150" y1="380" x2="1250" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="1350" y1="350" x2="1450" y2="400" stroke="white" stroke-width="1"/>
+    <line x1="1380" y1="250" x2="1350" y2="350" stroke="white" stroke-width="1"/>
+    <line x1="1420" y1="150" x2="1380" y2="250" stroke="white" stroke-width="1"/>
+  </g>
+</svg>

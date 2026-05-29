@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Robot head outline -->
+  <rect x="34" y="38" width="60" height="50" rx="12" fill="white" opacity="0.95"/>
+  <!-- Eyes -->
+  <circle cx="52" cy="58" r="7" fill="#6366f1"/>
+  <circle cx="76" cy="58" r="7" fill="#6366f1"/>
+  <!-- Eye highlights -->
+  <circle cx="54" cy="56" r="2.5" fill="white"/>
+  <circle cx="78" cy="56" r="2.5" fill="white"/>
+  <!-- Smile / mouth -->
+  <rect x="48" y="72" width="32" height="4" rx="2" fill="#6366f1" opacity="0.6"/>
+  <!-- Antenna -->
+  <line x1="64" y1="38" x2="64" y2="24" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="64" cy="22" r="5" fill="white"/>
+  <circle cx="64" cy="22" r="3" fill="#a78bfa"/>
+  <!-- Ears / side connectors -->
+  <rect x="24" y="52" width="10" height="16" rx="4" fill="white" opacity="0.8"/>
+  <rect x="94" y="52" width="10" height="16" rx="4" fill="white" opacity="0.8"/>
+  <!-- Document lines below (representing txt/markdown) -->
+  <rect x="40" y="96" width="48" height="3" rx="1.5" fill="white" opacity="0.5"/>
+  <rect x="40" y="103" width="36" height="3" rx="1.5" fill="white" opacity="0.35"/>
+  <rect x="40" y="110" width="42" height="3" rx="1.5" fill="white" opacity="0.2"/>
+</svg>

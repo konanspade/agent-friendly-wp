@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
+
+      - name: Build plugin zip
+        run: |
+          mkdir -p dist
+          zip -r "dist/agent-friendly-wp-${{ steps.version.outputs.version }}.zip" \
+            agent-friendly-wp.php \
+            readme.txt \
+            uninstall.php \
+            assets/ \
+            includes/ \
+            -x "*.DS_Store"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Agent Friendly v${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: dist/agent-friendly-wp-${{ steps.version.outputs.version }}.zip
